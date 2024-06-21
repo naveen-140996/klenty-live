@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel Testimonial Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        .testimonial-card-header h2 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 3.75rem;
+            text-align: center;
+            text-transform: capitalize;
+            color: #0e0d59;
+            margin-bottom: 4rem;
+            font-family: 'Poppins';
+        }
+        .flex-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            font-family: 'Poppins';
+        }
+        .card-owl-carosual {
+            width: 846px !important;
+        }
+        .card-testimonial-box {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f8f4fe;
+            border-radius: 6px;
+        }
+        .card-left-section {
+            width: 55%;
+        }
+        .card-left-section-clientreviews {
+            padding: 2rem;
+        }
+        .card-left-section-clientfeedback {
+            color: #120155;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 2rem;
+        }
+        .card-left-section-clientname {
+            color: #0e0d59;
+            font-size: 1.375rem;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 0.25rem;
+        }
+        .card-left-section-clientrole {
+            color: #7b7496;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0;
+        }
+        .card-right-section {
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-12 text-center testimonial-card-header">
+                <h2>Our Clients Love Us</h2>
+            </div>
+            <div class="col-12 flex-container">
+                <div class="card-owl-carosual owl-carousel" id="card-carousel">
+                    <!-- First Card -->
+                    <div class="card-testimonial-box">
+                        <div class="card-left-section">
+                            <img src="./Assets/img/notation.png" alt="quotes img" width="97" height="58" class="t6-left-section-quotes">
+                            <div class="card-left-section-clientreviews">
+                                <p class="card-left-section-clientfeedback">
+                                    Klenty has helped us <br class="d-none d-md-block">
+                                    engage a far greater number of <br class="d-none d-md-block">
+                                    leads per week, resulting in an <br class="d-none d-md-block">
+                                    outbound revenue jump of
+                                    <strong>93%.</strong>
+                                </p>
+                                <p class="card-left-section-clientname">Adam Weinger</p>
+                                <p class="card-left-section-clientrole">
+                                    President, Double The Donation
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-right-section">
+                            <img src="./Assets/img/adam.png" alt="adam" width="425" height="417" class="t6-right-section-clientimage">
+                        </div>
+                    </div>
+                    <!-- Second Card -->
+                    <div class="card-testimonial-box">
+                        <div class="card-left-section">
+                            <img src="./Assets/img/notation.png" alt="quotes img" width="97" height="58" class="t6-left-section-quotes">
+                            <div class="card-left-section-clientreviews">
+                                <p class="card-left-section-clientfeedback">
+                                    Klenty has revolutionized our <br class="d-none d-md-block">
+                                    approach to sales, enabling us to <br class="d-none d-md-block">
+                                    close deals more efficiently and <br class="d-none d-md-block">
+                                    increase our sales performance by
+                                    <strong>85%.</strong>
+                                </p>
+                                <p class="card-left-section-clientname">Jane Doe</p>
+                                <p class="card-left-section-clientrole">
+                                    CEO, Sales Boost Inc.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-right-section">
+                            <img src="./Assets/img/jane.png" alt="jane" width="425" height="417" class="t6-right-section-clientimage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#card-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true
+            });
+        });
+    </script>
+</body>
+</html>

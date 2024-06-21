@@ -1,0 +1,985 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container-fluid {
+  width: 100%;
+}
+.banner-bg {
+  /* background: linear-gradient(to right, #fff 0%, #e7b4ff4f, #79a6ff3b, #fff); */
+  background: url(./Assets/img/banner-background.webp) no-repeat top;
+  background-size: cover;
+}
+.margin-top-140{
+  margin-top: 140px;
+}
+.menu-li {
+  list-style: none;
+  padding: 0 20px;
+  color: #0d144a;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Poppins';
+}
+.btn-login {
+  color: #0d144a;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 20px;
+  font-family: 'Poppins';
+}
+.btn-schedule,
+.btn-signup {
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 700;
+  border: 1px solid #504ee4;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-family: 'Poppins';
+}
+.btn-schedule {
+  background: #fff;
+  color: #504ee4;
+}
+.btn-signup {
+  background: #504ee4;
+  color: #fff;
+}
+.banner-inner-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.inner-left-side-sales {
+  font-size: 16px;
+  font-weight: 600;
+  color: #504ee4;
+  margin-bottom: 10px;
+  font-family: 'Poppins';
+}
+.inner-left-pipeline {
+  font-size: 50px;
+  font-weight: 400;
+  color: #0e0d59;
+  font-family: "Paytone One", sans-serif !important;
+}
+.inner-left-descriptio {
+  color: #3b3a76;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Poppins';
+}
+.right-side-inner {
+  padding-left: 60px !important;
+}
+.background-eclipse {
+  padding: 5rem 0 3rem;
+}
+.first-line,
+.second-line,
+.third-line,
+.fourth-line {
+  position: absolute;
+  z-index: 3;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  transition-timing-function: cubic-bezier(0.42, 0, 0, 1);
+  animation: 0.75s ease 1s 1 normal both running slideDown1;
+}
+.first-line {
+  bottom: 65%;
+}
+.second-line {
+  bottom: 55%;
+}
+.third-line {
+  bottom: 45%;
+}
+.fourth-line {
+  bottom: 35%;
+}
+.owl-header {
+  color: #7c7bb0;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+div.highway-slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  div.highway-barrier {
+    overflow: hidden;
+    position: relative;
+  }
+  ul.highway-lane {
+    display: flex;
+    height: 100%;
+    li.highway-car {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #343434;
+    }
+  }
+}
+
+@keyframes translatestf {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+div.highway-barrier {
+  ul.highway-lane {
+    width: 500%;
+    li.highway-car {
+      animation: translatestf 30s linear infinite;
+      h4 {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@keyframes translateinfinite {
+  100% {
+    transform: translateX(calc(-180px * 12));
+  }
+}
+#infinite div.highway-barrier {
+  &::before,
+  &::after {
+    content: " ";
+    position: absolute;
+    z-index: 9;
+    width: 180px;
+    height: 100%;
+  }
+  &::before {
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  &::after {
+    top: 0;
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  ul.highway-lane {
+    width: calc(180px * 24);
+    li.highway-car {
+      width: 180px;
+      animation: translateinfinite 25s linear infinite;
+      span.fab {
+        font-size: 65px;
+      }
+    }
+  }
+}
+.pointer-cursor {
+  cursor: pointer;
+}
+.sales-force-header{
+    font-size: 32px;
+    font-weight: 600;
+    color: #0E0D59;
+    font-family: 'Poppins';
+}
+.card-slide{
+    border-radius: 8px;
+}
+.card-img,.card-img-arrow{
+    transition: all 0.4s;
+}
+.card-bg{
+    border-radius: 8px;
+    background: linear-gradient(332deg, rgba(214, 189, 255, 0.4) 12.21%, rgba(50, 0, 249, 0.4) 85.61%);
+    padding: 20px;
+}
+.card-heading{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.card-description{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: #3D3C7D;
+    line-height: 21px;
+}
+.card-explore{
+    color: #504EE4;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card-slide:hover .card-img {
+    transform: scale(1.1); /* Zoom effect */
+}
+.card-bg .card-img{
+    padding: 0.5rem;
+    padding-top: 0;
+    padding-bottom: 0.75rem;
+}
+.card-slide:hover .card-img-arrow{
+    transform: translateX(4px);
+}
+.product-bg{
+    background: url(./Assets/img/klentyCapabilitiesBg.svg) no-repeat center;
+    background-size: cover;
+}
+.klenty-product-header, .font-italic{
+    color: #0E0D59;
+    font-size: 46px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+.font-italic{
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 600;
+}
+.b2b{
+    font-family: 'Poppins';
+    color: #504EE4;
+    font-size: 14px;
+    font-weight: 600;
+}
+.contact-data{
+    color: #0E0D59;
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 600
+}
+.klenty-searches{
+    color:#2D2C76;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    width: 70%;
+    margin: 0 auto;
+}
+.btn-expolre-data{
+    padding: 10px 30px;
+    color: #fff;
+    background: #504EE4;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border: none;
+}
+.sales-dialer {
+    margin: 0px 10px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color:#7D78BB;
+}
+.dialer-active{
+    display:none;
+}
+
+.nav-link .dialer-inactive{
+    display: block;
+}
+
+.nav-link.active{
+    background: #F5EFFF !important;
+    padding: 8px 10px !important;
+    border-radius: 5px !important;
+    border: none !important;
+}
+.nav-link.active .dialer-inactive{
+    display: none;
+}
+.nav-link.active .dialer-active{
+    display: block !important;
+}
+.nav-link.active, .sales-dialer {
+    font-weight: 600;
+    color: #4F48A3;
+}
+.hr-color{
+    color: #ECEBF8;
+}
+.learn-more{
+    color: #504EE4;
+    text-decoration: none !important;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.select-tab-content h3{
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #0E0D59;
+}
+.select-tab-content p{
+    font-size: 16px;
+    font-family:'Poppins';
+    font-weight: 400;
+    color: #3D3C7D;
+}
+.progressBarCont {
+    height: 4px;
+    background: #e2e1ff;
+    border-radius: 4px;
+}
+.progressBar {
+    background: linear-gradient(41deg, rgba(236, 236, 255, 1) 0%, rgba(137, 135, 255, 1) 100%);
+    height: 4px;
+    border-radius: 16px;
+    width: 0%;
+    transition: width 0.5s;
+}
+.animate-tab-count{
+    position: relative;
+    height: 400px;
+}
+.select-tab-content{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    transition: all 0.3s;
+}
+.select-tab-content.show{
+    opacity: 1;
+    z-index: 1;
+}
+.nav-tabs{
+    border-bottom: none !important;
+}
+.team-sec-inner-content{
+    padding-top:80px;
+}
+.team-sec-inner-content h2,p{
+    font-family: 'Poppins';
+}
+.team-sec-inner-content h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: #0E0D59;
+}
+.caseStudyCard{
+  border-radius: 1rem;
+  border: 1px solid #fff;
+  background: linear-gradient(152deg, #9154f4 14.39%, #4c2ec7 87.79%), rgba(255, 255, 255, 0.64);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  width: 786px;
+  height: 386px;
+  padding: 12px;
+  margin: auto;
+}
+.caseStudyCardContent {
+  max-width: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.caseStudyCardHead{
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+.flexGap1 {
+  display: flex;
+  gap: 2rem;
+}
+.caseStudyCard .callIcon {
+  display: inline-block !important;
+  position: relative;
+  top: -1px;
+  margin-right: 2px;
+}
+.caseStudyCardContent img{
+  width: fit-content !important;
+}
+.caseStudyCard .dialsText {
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+.caseStudyCard .increasedCount {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 0.5rem;
+}
+.caseStudyCard .upArrow {
+  display: inline !important;
+  position: relative;
+}
+.readCaseLink {
+  color: #6de5ff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.readCaseLink img {
+  display: inline !important;
+  position: relative;
+  top: -2px;
+  margin-left: 3px;
+  transition: all 0.3s;
+}
+.caseStudyCardImg img {
+  width: 326px !important;
+}
+.h-100 {
+  height: 100% !important;
+}
+.caseStudyCard hr {
+  margin: 1.5rem 0 1rem;
+  border-top: 1px solid #c3adfc;
+}
+.our-team-sec .owl-stage-outer::before  {
+  background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 18%;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.our-team-sec .owl-stage-outer::after {
+  background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 18%;
+  z-index: 99;
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.our-team-sec .owl-stage {
+  transition: all 1s ease 0s;
+
+  height: 390px;
+}
+.our-team-sec .owl-item {
+  position: relative;
+  z-index: -1;
+}
+.our-team-sec{
+  position: relative;
+}
+.our-team-sec .owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  top: 162px !important;
+  font-size: 30px !important ;
+  font-family: 'Poppins' !important;
+  background: #ccc !important;
+  border-radius: 50px;
+  padding: 0px 15px !important;
+  left: 87px;
+}
+.our-team-sec .owl-carousel .owl-nav button.owl-next{
+  right: 87px;
+  position: absolute;
+  top: 162px !important;
+  font-size: 30px !important ;
+  font-family: 'Poppins' !important;
+  background: #ccc !important;
+  border-radius: 50px;
+  padding: 0px 15px !important;
+}
+.owl-theme .owl-dots{
+  display: none !important;
+}
+.support-sales {
+  text-align: center;
+  background: linear-gradient(180deg, #302e9b 0%, #161489 100%), #f5f5ff;
+  padding: 5.5rem 0 10rem;
+  position: relative;
+  margin-bottom: -54px;
+}
+.support_sales_success_subHead, .support_security_privacy_subHead {
+  color: #3ec5ff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+} 
+.support-sales h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Poppins';
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+.sales_success_card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.sales_success_card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  background: rgba(81, 203, 255, 0.1);
+  backdrop-filter: blur(4px);
+  min-width: 312px;
+}
+.sales_success-card-text {
+  color: #fff;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  margin: 0;
+}
+.shieldImg {
+  position: absolute;
+  bottom: -16%;
+  z-index: 4;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.security_bg{
+  background: url(./Assets/img/security_bg_1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 2px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.security_privacy_bg{
+    background: url(./Assets/img/security_bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 12rem 0 6rem;
+    position: relative;
+    z-index: 2;
+    top: -11px;
+}
+.security_privacy_bg h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+.security_privacy_bg .desc {
+  color: #9f9ded;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4.5rem;
+}
+.iconsContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  text-align: center;
+}
+.iconsCardHead {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0.25rem;
+}
+.iconsCardDesc {
+  color: #9f9ded;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.our-team-sec .owl-carousel .owl-nav button.owl-prev:focus{
+  outline: none;
+}
+.our-team-sec .owl-carousel .owl-nav button.owl-next:focus{
+  outline: none;
+}
+.testimonial-card-header h2{
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #0e0d59;
+  margin-bottom: 4rem;
+  font-family: 'Poppins';
+}
+.flex-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins';
+}
+.card-owl-carosual{
+  width: 846px !important;
+}
+.card-testimonial-box{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f4fe;
+  border-radius: 6px;
+}
+.card-left-section{
+  width: 55%;
+}
+.card-left-section-clientreviews {
+  padding: 2rem;
+}
+.card-left-section-clientfeedback {
+  color: #120155;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+.card-left-section-clientname {
+  color: #0e0d59;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.25rem;
+}
+.card-left-section-clientrole {
+  color: #7b7496;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.card-right-section {
+  width: 45%;
+}
+.t6-left-section-quotes{
+  width: fit-content !important;
+}
+.testimonial-card-sec2{
+  position: relative;
+}
+.testimonial-card-sec2 .owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  top: 190px;
+  left: -107px;
+  font-size: 30px !important;
+  font-family: 'Poppins';
+  padding: 2px 20px !important;
+  border-radius: 50px;
+  border: 1px solid #0E0D59;
+  line-height: 44px;
+}
+.testimonial-card-sec2 .owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  top: 190px;
+  right: -107px;
+  font-size: 30px !important;
+  font-family: 'Poppins';
+  padding: 2px 20px !important;
+  border-radius: 50px;
+  border: 1px solid #0E0D59;
+  line-height: 44px;
+}
+.testimonial-card-sec2 .owl-carousel .owl-nav button.owl-next:focus{
+  outline: none;
+}
+.testimonial-card-sec2 .owl-carousel .owl-nav button.owl-prev:focus{
+  outline: none;
+}
+.build-pipline-bg {
+  background: linear-gradient(180deg, #5452be 0%, #161489 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 7rem 1rem;
+  text-align: center;
+  font-family: 'Poppins';
+}
+.build-pipline-bg h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+.startbutton {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff !important;
+  background:linear-gradient(to right,#4F95FF,#3686FF,#649FF9);
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  height: 2.75rem;
+}
+.navbar-mobile {
+  display: none; /* Optional: Box shadow for a subtle effect */
+}
+
+/* Flex container for logo, hamburger menu, and menu items */
+.navbar-mobile .display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px; /* Adjust width as needed */
+}
+
+.logo img {
+  max-width: 100%; /* Ensure logo image does not exceed its container */
+}
+
+.hamburger-menu {
+  display: none; /* Hide by default on larger screens */
+  cursor: pointer;
+}
+
+.menu-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Styles for menu items */
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  position: absolute;
+  top: 60px; /* Adjust as needed */
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Background color for the dropdown */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for dropdown */
+  z-index: 1000; /* Ensure dropdown appears above other content */
+  display: none; /* Initially hidden */
+}
+
+.menu.active {
+  display: flex; /* Show menu items when active */
+}
+
+.menu-li {
+  margin: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-menu {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: none; /* Hide close button by default */
+}
+.sticky{
+  position: fixed;
+  background: #fff;
+  padding: 10px;
+  z-index: 999;
+  width: 100%;
+}
+.container-fluid{
+  padding-left: 0px !important;
+}
+/* responsive design  */
+
+@media only screen and (max-width:768px){
+  .navbar-mobile{
+    display: block;
+  }
+  .hamburger-menu {
+    display: block; /* Show hamburger menu icon on smaller screens */
+}
+
+.menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    flex-direction: row;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.menu.active {
+    display: block; /* Show menu items when active */
+}
+
+.close-menu {
+    display: block; /* Show close button when menu is open */
+}
+.web-block{
+  display: none !important;
+}
+.inner-left-side-sales{
+  font-size: 12px;
+}
+.inner-left-pipeline {
+  font-size: 30px;
+}
+.inner-left-description {
+  font-size: 12px;
+}
+.right-side-inner{
+  padding-left: 40px !important;
+  padding-top: 30px;
+}
+.background-eclipse{
+  padding: 1rem 0 3rem;
+}
+div ul.highway-lane {
+  height: 65% !important;
+}
+#infinite div.highway-barrier {
+  &::before,
+  &::after {
+    height: 60% !important;
+    width: 100px;
+  }
+}
+.sales-force-header {
+  font-size: 18px;
+}
+.klenty-product-header, .font-italic{
+  font-size: 25px;
+}
+.select-tab-content img{
+  width: 400px !important;
+  margin: 20px auto;
+}
+.animate-tab-count{
+  height: 470px;
+}
+.team-sec-inner-content h2 {
+  font-size: 20px;
+}
+.klenty-searches {
+
+  font-size: 12px;
+}
+.caseStudyCard{
+  flex-direction: column;
+  height: auto;
+  width: 322px;
+}
+.caseStudyCardHead{
+  font-size: 15px !important;
+}
+.caseStudyCard .dialsText{
+ font-size: 10px;
+}
+.caseStudyCardImg img {
+  width: 297px !important;
+}
+.our-team-sec .owl-carousel .owl-nav button.owl-prev{
+  top:629px !important;
+}
+.our-team-sec .owl-carousel .owl-nav button.owl-next{
+  top:629px !important;
+}
+.readCaseLink{
+  font-size: 10px;
+}
+.shieldImg {
+  bottom: -9%;
+}
+.iconsContainer{
+  flex-direction: column;
+}
+.security_privacy_bg {
+  top:-29px;
+}
+.testimonial-card-header h2{
+  font-size: 20px;
+}
+.card-testimonial-box{
+  flex-direction: column;
+  width: 400px !important;
+}
+.card-left-section-clientfeedback{
+  font-size: 15px;
+}
+.test-mob-sec{
+  width: 12%;
+}
+.card-left-section,.card-right-section{
+  width: 100%;
+}
+.build-pipline-bg{
+  padding: 20px;
+  margin-top: 80px;
+}
+.build-pipline-bg h2{
+  font-size: 20px;
+}
+.testimonial-card-sec2 .owl-carousel .owl-nav button.owl-prev{
+  display: none;
+}
+.testimonial-card-sec2 .owl-carousel .owl-nav button.owl-next{
+  display: none;
+}
+}
+
+
